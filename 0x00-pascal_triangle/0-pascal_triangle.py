@@ -1,4 +1,5 @@
 def pascal_triangle(n):
+    """ computes n height Pascal Triangle """
     lis = [1]
     superlis = [[1]]
     if n <= 0:

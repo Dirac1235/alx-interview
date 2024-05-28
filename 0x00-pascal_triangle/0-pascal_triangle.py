@@ -3,6 +3,7 @@
 0. Pascal's Triangle
 """
 
+
 def pascal_triangle(n):
     """ computes n height Pascal Triangle """
     lis = [1]

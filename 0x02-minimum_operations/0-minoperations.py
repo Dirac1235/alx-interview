@@ -10,7 +10,6 @@ import math
 def minOperations(n):
     factor = find_largest_prime_factor(n)
     value = factor + 1 + (n - factor) / factor
-    print(value)
     return int(value)
 
 

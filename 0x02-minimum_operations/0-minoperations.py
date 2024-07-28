@@ -8,14 +8,22 @@ import math
 
 
 def minOperations(n):
+    """
+    minOperations
+    Gets fewest # of operations needed to result in exactly n H characters
+    """
+    if (n < 2):
+        return 0
     factor = find_largest_prime_factor(n)
     value = factor + 1 + (n - factor) / factor
     return int(value)
 
 
 def find_largest_prime_factor(n):
+    """finds the prime factor"""
     factors = []
     d = 2
+    
     while n > 1:
         while n % d == 0:
             factors.append(d)
